@@ -696,6 +696,10 @@ display: none;
     .user-search {
         width: 240px;
     }
+    .new-transfer.square-btn{
+      
+        padding: 10px;
+    }
 }
 @media (max-width: 376px) {
     .transfer {
@@ -707,4 +711,5 @@ display: none;
     .form-btn__container {
         margin: 0 0 20px 0;
     }
+    
 }
