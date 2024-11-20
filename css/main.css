@@ -206,7 +206,7 @@
 .round-checkbox:checked + label::before {
     border: 1px solid rgb(210, 207, 222);
     background: rgb(38, 38, 65);
-    background: url("/img/round.svg") no-repeat center center;
+    background: url("./img/round.svg") no-repeat center center;
 }
 .round-checkbox:not(:checked) + label::before {
     border: 1px solid rgb(123, 122, 174);
@@ -262,7 +262,7 @@
 .square-checkbox:checked + label::before {
     border: 1px solid rgb(210, 207, 222);
     background: rgb(38, 38, 65);
-    background: url("/img/checked.svg") no-repeat center center;
+    background: url("./img/checked.svg") no-repeat center center;
     background-size: 24px;
 }
 .square-checkbox:not(:checked) + label::before {
