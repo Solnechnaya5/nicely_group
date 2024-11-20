@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/null.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Nicely Group Test Task</title>
+</head>
+
+<body>
+    <main>
+        <section class="transfer">
+            <div class="transfer-title">
+                <img src="./img/money-bag.svg" alt="bag icon">
+                <h2 class="second-title">Переказ балансу між користувачами</h2>
+            </div>
+            <div class="balance">
+                <h2 class="second-title">Ваш баланс у системі</h2>
+                <div class="balance-status">
+                    <div class="balance-info">
+                        <p>на зараз</p>
+                        <p class="balance-count"><img src="./img/icon-balance.svg" alt="icon balance"> <span
+                                class="balance-count_summ">363,00</span></p>
+                    </div>
+                    <div class="balance-status__current-time">
+                        <p class="current-time_date">дата: <span id="current-date"></span></p>
+                        <p class="current-time_time">час: <span id="current-time"></span></p>
+                    </div>
+                </div>
+            </div>
+            <form class="transfer-form" action>
+                <div class="transfer-form__container">
+                    <div class="transfer-data">
+                        <div class="transfer-data__top">
+                            <div class="transfer-data__column">
+                                <h2 class="second-title">Виберіть користувача</h2>
+                                <div class="user-search__filter">
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="another-type" name="another" value="another"
+                                            class="round-checkbox" />
+                                        <label for="another-type">інший</label>
+                                    </div>
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="expert-type" name="expert" value="expert"
+                                            class="round-checkbox" />
+                                        <label for="expert-type">Експерт</label>
+                                    </div>
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="user-type" name="user" value="user"
+                                            class="round-checkbox" />
+                                        <label for="user-type">Користувач</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transfer-data__column">
+                                <div class="user-search">
+                                    <input type="search" name="user-search" id="user-search"
+                                        placeholder="Введіть ID або ім'я користувача">
+                                    <label for="user-search"><img src="./img/search-icon.svg" alt="search icon"></label>
+                                </div>
+                                <div class="user-search__results">
+                                    <div class="user-search__list">
+                                        <div class="user-card">
+                                            <div class="user-card__checkbox d-none">
+                                                <input type="checkbox" id="user-id_1" name="another" value="user-id_1"
+                                                    class="square-checkbox" />
+                                                <label for="user-id_1"></label>
+                                            </div>
+                                            <div class="user-info" id="user-id_1">
+                                                <div class="user-photo">
+                                                    <img src="./img/user-1.png" alt>
+                                                    <span class="user-photo__status"></span>
+                                                </div>
+                                                <div class="user-data">
+                                                    <div class="user-name">Віктор Новіков</div>
+                                                    <div class="user-city">м. Київ</div>
+                                                    <div class="user-rate"><img src="./img/trophy.svg"
+                                                            alt="trophy"><span>13
+                                                            /
+                                                            202</span></div>
+                                                </div>
+                                            </div>
+                                            <button class="user-info__close d-none"><img src="./img/close-icon.svg"
+                                                    class="d-none" alt="close icon"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transfer-data__count">
+                            <div class="count-column">
+                                <h2 class="second-title">Я хочу перекласти</h2>
+                                <div class="count-column__bottom">
+                                    <div class="all-money">
+                                        <input type="checkbox" id="max-count" name="max-count" value=""
+                                            class="round-checkbox" />
+                                        <label for="max-count">МАКС</label>
+                                    </div>
+                                    <input type="text" name="summa" id="summa" class="form-input input-conversion"
+                                        value="27" placeholder="Введіть суму">
+                                    <button type="submit" class="transfer-form__btn square-btn"
+                                        id="conversion-submit">КОНВЕРТУВАТИ</button>
+                                </div>
+                            </div>
+                            <div class="count-column">
+                                <h2 class="second-title">Сума до переказу:</h2>
+                                <div class="count-column__bottom">
+                                    <input type="text" value="26.73" name="summa" id="summa"
+                                        class="form-input input-transfer">
+                                    <button class="transfer-form__btn square-btn" id="transfer-btn">ПЕРЕКАЗАТИ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-data">
+                        <div class="transfer-data__top">
+                            <div class="transfer-data__column">
+                                <h2 class="second-title">Виберіть користувача</h2>
+                                <div class="user-search__filter">
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="another-type" name="another" value="another"
+                                            class="round-checkbox" />
+                                        <label for="another-type">інший</label>
+                                    </div>
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="expert-type" name="expert" value="expert"
+                                            class="round-checkbox" />
+                                        <label for="expert-type">Експерт</label>
+                                    </div>
+                                    <div class="user-type_item">
+                                        <input type="checkbox" id="user-type" name="user" value="user"
+                                            class="round-checkbox" />
+                                        <label for="user-type">Користувач</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transfer-data__column">
+                                <div class="user-search">
+                                    <input type="search" name="user-search" id="user-search"
+                                        placeholder="Введіть ID або ім'я користувача">
+                                    <label for="user-search"><img src="./img/search-icon.svg" alt="search icon"></label>
+                                </div>
+                                <div class="user-search__results">
+                                    <div class="user-search__list">
+                                        <div class="user-card">
+                                            <div class="user-card__checkbox">
+                                                <input type="checkbox" id="user-id_2" name="another" value="user-id_1"
+                                                    class="square-checkbox" />
+                                                <label for="user-id_2"></label>
+                                            </div>
+                                            <div class="user-info" id="user-id_2">
+                                                <div class="user-photo">
+                                                    <img src="./img/user-2.png" alt>
+                                                    <span class="user-photo__status"></span>
+                                                </div>
+                                                <div class="user-data">
+                                                    <div class="user-name">Марія Павлова</div>
+                                                    <div class="user-city">м. Київ</div>
+                                                    <div class="user-rate"><img src="./img/trophy.svg"
+                                                            alt="trophy"><span>125 / 190</span></div>
+                                                </div>
+                                            </div>
+                                            <button class="user-info__close "><img src="./img/close-icon.svg"
+                                                    alt="close icon"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transfer-data__count">
+                            <div class="count-column">
+                                <h2 class="second-title">Я хочу перекласти</h2>
+                                <div class="count-column__bottom">
+                                    <div class="all-money">
+                                        <input type="checkbox" id="max-count" name="max-count" value=""
+                                            class="round-checkbox" />
+                                        <label for="max-count">МАКС</label>
+                                    </div>
+                                    <input type="text" name="summa" id="summa" class="form-input input-conversion"
+                                        value="" placeholder="Введіть суму">
+                                    <button type="submit" class="transfer-form__btn square-btn"
+                                        id="conversion-submit">КОНВЕРТУВАТИ</button>
+                                </div>
+                            </div>
+                            <div class="count-column">
+                                <h2 class="second-title">Сума до переказу:</h2>
+                                <div class="count-column__bottom">
+                                    <input type="text" value="0,00" name="summa" id="summa"
+                                        class="form-input input-transfer">
+                                    <button class="transfer-form__btn square-btn" id="transfer-btn">ПЕРЕКАЗАТИ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="transfer-form__btns">
+                    <div class="form-btn__container "><button type="submit"
+                            class="form-btn__main"><span>Підтвердити</span></button></div>
+                    <div class="form-btn__container"><button type="reset"
+                            class="form-btn__main"><span>Скасувати</span></button></div>
+                </div>
+            </form>
+            <button class="new-transfer square-btn">Створити ще переказ</button>
+            <div class="transfer-additional-info">
+                <p>При переведенні балансу системою стягується 1% до переказу</p>
+                <p class="red-text">Переклад здійснюється лише всередині системи</p>
+            </div>
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
