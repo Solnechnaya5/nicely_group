@@ -643,11 +643,11 @@ display: none;
 }
 @media (max-width: 682px) {
     .balance {
-        margin: 0 22px 20px 27px;
+        margin: 0 20px 20px 20px;
     }
     .transfer-form,
     .new-transfer {
-        margin-left: 24px;
+        margin-left: 20px;
     }
     .transfer-data__top {
         flex-direction: column;
@@ -656,7 +656,7 @@ display: none;
         margin-right: 0;
     }
     .transfer-additional-info {
-        margin: 0 22px 0 27px;
+        margin: 0 22px 0 20px;
     }
     .user-search__filter {
         display: flex;
@@ -692,13 +692,14 @@ display: none;
     #conversion-submit,
     .input-transfer,
     #transfer-btn,
-    .new-transfer {
-        width: 280px;
+    .new-transfer,
+    .user-search {
+        width: 240px;
     }
 }
 @media (max-width: 376px) {
     .transfer {
-        margin: 20px 10px;
+        margin:10px;
     }
     .transfer-form__btns {
         flex-direction: column;
